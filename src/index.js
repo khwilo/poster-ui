@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import logo from './react-logo.png';
+import Poster from './components/Poster';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const post = {
+    image: `${logo}`,
+    title: "React",
+    text : "The best thing since jQuery, probably"
+};
 
-serviceWorker.unregister();
+ReactDOM.render(<Poster post={post} />, document.getElementById('root'));
