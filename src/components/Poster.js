@@ -3,15 +3,15 @@ import React from 'react';
 const Poster = ({ post }) => {
     const {image, title, text} = post;
     return (
-        <div>
-            <div>
-                <img src={image} alt="react-logo"/>
+        <div className="container">
+            <div className="logoContainer">
+                <img className="logo" src={image} alt="react-logo"/>
             </div>
-            <div>
-                <p>{title}</p>
+            <div className="titleContainer">
+                <p className="title">{title}</p>
             </div>
-            <div>
-                <p>{text}</p>
+            <div className="textContainer">
+                <p className="text">{text}</p>
             </div>
         </div>
     );
